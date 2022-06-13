@@ -7,8 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface MensagemRepositorioIF extends JpaRepository<Mensagem, Long> {
-
-
     @Query("SELECT m FROM Mensagem m where (m.destinatario=:nome)")
     public List<Mensagem> getMensagemByNome(String nome);
 

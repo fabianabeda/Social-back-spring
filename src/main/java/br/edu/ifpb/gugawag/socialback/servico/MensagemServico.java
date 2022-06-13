@@ -18,9 +18,9 @@ public class MensagemServico {
         return this.mensagemRepositorioIF.findAll();
     }
 
-    public Mensagem menssagemEnviada(Mensagem mensagem){
+    public Mensagem mensagemEnviada(Mensagem mensagem){
         if(Objects.isNull(mensagem)){
-            throw new RuntimeException("Menssagem está vazia");
+            throw new RuntimeException("Não tem mensagem a ser exibida");
         }
         Mensagem mensagemInserida = this.mensagemRepositorioIF.save(mensagem);
         return mensagemInserida;

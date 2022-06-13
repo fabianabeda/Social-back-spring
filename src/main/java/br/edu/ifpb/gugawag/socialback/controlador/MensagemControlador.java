@@ -1,6 +1,4 @@
-es (20 sloc) 737 Bytes
 package br.edu.ifpb.gugawag.socialback.controlador;
-
 import br.edu.ifpb.gugawag.socialback.modelo.Mensagem;
 import br.edu.ifpb.gugawag.socialback.servico.MensagemServico;
 import org.springframework.beans.factory.annotation.Autowired;
